@@ -1,0 +1,16 @@
+/* eslint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-white px-1 rounded hover:rounded-lg hover:font-bold my-2 mx-2
+}
+
+ul {
+  @apply list-none
+}
+
+input {
+  @apply my-2 border-2 border-black rounded hover:rounded-lg hover:border-4
+}
