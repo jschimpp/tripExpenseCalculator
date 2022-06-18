@@ -1,15 +1,16 @@
-const mongoose=require('mongoose');
+/* eslint-disable prefer-destructuring */
+const mongoose = require('mongoose');
 
-const Schema=mongoose.Schema;
+const Schema = mongoose.Schema;
 
-const tripSchema=new Schema({
-    destination: String,
-    airfare: Number,
-    lodging: Number,
-    attractions: Number,
-    food: Number
-})
+const tripSchema = new Schema({
+  destination: String,
+  airfare: Number,
+  lodging: Number,
+  attractions: Number,
+  food: Number,
+});
 
-const Trip=mongoose.model('Trips', tripSchema);
+const Trip = mongoose.model('Trips', tripSchema);
 
-module.exports=Trip;
+module.exports = Trip;
